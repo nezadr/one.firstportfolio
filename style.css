@@ -1,0 +1,221 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  margin: 1;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.nav {
+  background: #e6e6e6;
+  padding: 10px;
+  text-align: center;
+}
+
+.nav__list {
+  list-style: none;
+  margin: 10px;
+  padding: 10px;
+  display: inline;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+.nav__items {
+  padding: 10px;
+  margin: 0;
+  list-style: none;
+  display: inline;
+}
+
+.nav__links {
+  color: black;
+  text-decoration: none;
+  display: inline;
+  padding: 10px;
+}
+
+.nav__links.icon {
+  background: black;
+}
+
+.nav__links:hover {
+  color: black;
+  background: rgba(22, 224, 190, 1);
+  cursor: pointer;
+}
+
+/* Intro */
+
+.intro {
+}
+
+.section__intro--title {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.section__intro--text {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+  text-align: center;
+  background: rgb(22, 224, 190);
+}
+
+.section__intro--img {
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Experiences */
+
+.section__experiences--content {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  align-content: space-around;
+}
+
+.experiences__content {
+  padding: 20px;
+  align-items: center;
+  align-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+
+.section__experiences--subtitle {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* About me */
+
+.section__about--subtitle {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+  text-align: center;
+  background: rgb(22, 224, 190);
+  margin: 0;
+}
+
+.section__about--box {
+  display: flex;
+  background: rgba(22, 224, 190, 0.2);
+  padding: 20px;
+}
+
+.section__about--boxitem {
+  list-style: none;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.section__about--content {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+/* My work */
+
+.section__projects--title {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+  margin: 0;
+  background: rgb(22, 224, 190);
+  text-align: center;
+}
+
+.section__projects--content {
+  font-family: "Courier New", Courier, monospace;
+  width: 550px;
+  text-align: center;
+  margin: 0 auto;
+  background: rgba(22, 224, 190, 0.2);
+  padding: 20px;
+}
+
+.section__projects--img {
+  width: 550px;
+  height: 350px;
+  display: block;
+  margin: 0 auto;
+  border: 5px solid rgba(22, 224, 190, 0.2);
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes slidein {
+  from {
+    border: 5px solid rgba(22, 224, 190, 0.2);
+  }
+  to {
+    border-image: linear-gradient(
+        to right,
+        #bcbcbc 25%,
+        #e0c516 25%,
+        #e0c516 50%,
+        #e0162e 50%,
+        #e0162e 75%,
+        #16e0be 75%
+      )
+      1;
+  }
+}
+
+.section__projects--img:hover {
+  transition: ease-in-out 200ms;
+  opacity: 0.4;
+}
+
+/* Footer */
+
+.footer {
+  font-family: "Courier New", Courier, monospace;
+  background: #e6e6e6;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer-info {
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+
+#footer-mail {
+  text-decoration: none;
+  color: #000000;
+}
+
+#footer-phone {
+  display: inline;
+}
+
+.icons {
+  height: 20px;
+  width: 20px;
+  margin: 0 auto;
+}
